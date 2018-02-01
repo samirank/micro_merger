@@ -44,6 +44,14 @@ def merge(pdfs,dir_path):
 	print('\n merge successfully completed\n')
 	print('\nyour file is saved as:')
 	print('\nFilename:\t'+merged_file_name+'.pdf')
-	print('\nfile path:\t'dir_path)
+	print('\nfile path:\t'+dir_path+'\\'+merged_file_name+'.pdf')
 
 merge(pdfs,dir_path)
+print('\n\nFollowing files were merged:\n')
+i=1
+for pdf in pdfs:
+	print(str(i)+'. '+pdf)
+	i+=1
+print('\n\n\n')
+print('...... Thanks for using Micro pdf merger ......\n')
+print('source: https://github.com/samirank/micro_merger\n')
